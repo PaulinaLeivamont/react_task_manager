@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import useApp from "../context/use-app"
 
-const apiRoot = 'http://localhost:3000/'
+const apiRoot = import.meta.env.VITE_API || 'http://localhost:3000/'
 
 const Dashboard = () => {
 
