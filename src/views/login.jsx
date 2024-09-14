@@ -63,8 +63,8 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
 
                 <p className="text_l">Log into Task Manager</p>
-                <InputText className={'text_m'} value={name} onInput={(e) => setName(e.target.value)}/>
-                <InputText type="password" className={'text_m'} value={password} onInput={(e) => setPassword(e.target.value)}/>
+                <InputText id="name" className={'text_m'} value={name} onInput={(e) => setName(e.target.value)}/>
+                <InputText id="password" type="password" className={'text_m'} value={password} onInput={(e) => setPassword(e.target.value)}/>
                 <CustomButton className="info_bg action text_m" >
                     Log in
                 </CustomButton>
